@@ -15,6 +15,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AuthSerivce } from './auth.service';
 import { AuthGaurd } from './auth-gaurd.service';
 import { CanDeactivateGaurd } from './servers/edit-server/can-deactivate-gaurd.service';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { ServerResolver } from './servers/server/server-resolver.service';
 
 
 
@@ -27,7 +29,8 @@ import { CanDeactivateGaurd } from './servers/edit-server/can-deactivate-gaurd.s
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { CanDeactivateGaurd } from './servers/edit-server/can-deactivate-gaurd.s
     ServersService,
     AuthSerivce,
     AuthGaurd,
-  CanDeactivateGaurd],
+    CanDeactivateGaurd,
+    ServerResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
