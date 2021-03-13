@@ -14,6 +14,7 @@ import { ServersService } from './servers/servers.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthSerivce } from './auth.service';
 import { AuthGaurd } from './auth-gaurd.service';
+import { CanDeactivateGaurd } from './servers/edit-server/can-deactivate-gaurd.service';
 
 
 
@@ -36,7 +37,8 @@ import { AuthGaurd } from './auth-gaurd.service';
   providers: [
     ServersService,
     AuthSerivce,
-    AuthGaurd],
+    AuthGaurd,
+  CanDeactivateGaurd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
